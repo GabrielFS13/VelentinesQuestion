@@ -8,14 +8,17 @@
 
 body{
   display: flex;
-  height: 80vh;
+  height: auto;
   background-color: #f2f2f2;
   justify-content: center;
   align-items: center;
+  background: url('./bg.jpg');
 }
 
 main{
   display: flex;
+  flex-direction: column;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -26,9 +29,27 @@ main h1{
   text-align: center;
 }
 
+main figure{
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+main figure img{
+  max-width: 100%;
+}
+
 .buttons{
   width: 200px;
   display: flex;
   justify-content: space-between;
   position: relative;
 }
+
+.congrats{
+padding: 20px;
+  background-image: url('./congrats.gif');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
